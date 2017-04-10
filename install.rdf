@@ -16,11 +16,11 @@
             </Description>
         </em:targetApplication>
         
-        <em:optionsURL>chrome://lastfm_panel/content/gcp-options.xul</em:optionsURL>
+        <em:optionsURL>chrome://lastfm_panel/content/lastfm-options.xul</em:optionsURL>
         <em:optionsType>2</em:optionsType>
         
-        <em:iconURL>chrome://lastfm_panel/content/contacts-48.png</em:iconURL>
-        <em:icon64URL>chrome://lastfm_panel/content/contacts-64.png</em:icon64URL>
+        <em:iconURL>chrome://lastfm_panel/content/lastfm-48.png</em:iconURL>
+        <em:icon64URL>chrome://lastfm_panel/content/lastfm-64.png</em:icon64URL>
         
         <em:localized>
           <Description>
@@ -35,6 +35,14 @@
             <em:locale>en-US</em:locale>
             <em:name>Last.fm Panel</em:name>
             <em:description>Integrate your Last.fm with Firefox in a simple way.</em:description>
+          </Description>
+        </em:localized> 
+		
+        <em:localized>
+          <Description>
+            <em:locale>pt-BR</em:locale>
+            <em:name>Painel do Last.fm</em:name>
+            <em:description>Uma maneira simples de integrar o Last.fm com Firefox.</em:description>
           </Description>
         </em:localized>
 		

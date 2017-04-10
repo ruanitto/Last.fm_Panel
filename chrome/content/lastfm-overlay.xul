@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://lastfm_panel/content/lastfm-overlay.css" type="text/css"?>
+
+<!DOCTYPE overlay SYSTEM "chrome://lastfm_panel/locale/overlay.dtd">
+
+<overlay  id="lastfm_panel-overlay"
+          xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <script src="lastfm-overlay.js"/>
+	 
+    <keyset id="mainKeyset">
+      <key id="lastfm-shortcut_cmd" modifiers="" key="" oncommand="lastfm_panel.BrowserOverlay.lastfmShortcut_cmd();"/>
+    </keyset>
+    
+    <stringbundleset id="stringbundleset">
+      <stringbundle id="lastfm-string-bundle" src="chrome://lastfm_panel/locale/overlay.properties"/>
+    </stringbundleset>
+  
+	<toolbarpalette id="BrowserToolbarPalette">
+		<toolbarbutton
+			id="lastfm-toolbar-button"
+			class="toolbarbutton-1 chromeclass-toolbar-additional"
+			label="&lastfm_panelToolbarButton.label;"
+			tooltiptext="&lastfm_panelToolbarButton.tooltip;"
+			popup="lastfm-panel"
+      context="lastfm-context"
+			>  
+		</toolbarbutton>		
+	</toolbarpalette>
+  
+	<popupset>
+    <panel 
+				id="lastfm-panel" 
+				backdrag="true"
+				type="arrow"
+				onpopupshowing="lastfm_panel.BrowserOverlay.openlastfmPanel();"
+        noautohide="false"
+        onpopupshown="document.getElementById('lastfm-iframe').focus();"
+				>
+        <vbox flex="1">
+          <hbox id="lastfm-panel-toolbar" class="">
+            <toolbarbutton id="lastfm-toolbarButton_back"
+              class="lastfm-toolbarbutton-class"
+              oncommand="lastfm_panel.BrowserOverlay.goBack();"
+              tooltiptext="&lastfm_panelToolbar.goBack;"/>
+            <toolbarbutton id="lastfm-toolbarButton_forward"
+              class="lastfm-toolbarbutton-class"
+              oncommand="lastfm_panel.BrowserOverlay.goForward();"
+              tooltiptext="&lastfm_panelToolbar.goForward;"/>
+            <toolbarbutton id="lastfm-toolbarButton_reload"
+              class="lastfm-toolbarbutton-class"
+              oncommand="lastfm_panel.BrowserOverlay.setlastfmIframe();"
+              tooltiptext="&lastfm_panelToolbar.reload;"/>
+            <toolbarspacer flex="2" />
+            <toolbarbutton id="lastfm-toolbarButton_autoHide"
+              class="lastfm-toolbarbutton-class"
+              oncommand="lastfm_panel.BrowserOverlay.changeAutoHideMode();"
+              type="checkbox"
+              tooltiptext="&lastfm_panelToolbar.autohide;"/>
+            <toolbarbutton id="lastfm-toolbarButton_pin"
+              class="lastfm-toolbarbutton-class"
+              oncommand="lastfm_panel.BrowserOverlay.changePinMode();"
+              type="checkbox"
+              tooltiptext="&lastfm_panelToolbar.pin;"/>
+            <toolbarbutton id= "lastfm-toolbarButton_close"
+              class="lastfm-toolbarbutton-class"
+              oncommand="this.parentNode.parentNode.parentNode.hidePopup();"
+              tooltiptext="&lastfm_panelToolbar.close;"/>
+          </hbox>
+          <hbox id="lastfm-panel-iframe" flex="1">
+            <browser 
+              id="lastfm-iframe"
+              type="content"
+              src="chrome://lastfm_panel/content/lastfm-loading.xul" flex="2"
+              container="true"
+              />
+          </hbox>
+        </vbox>
+		</panel>
+  </popupset>
+  
+  <popupset>
+    <menupopup id="lastfm-context">
+      <command id="context_command" oncommand="lastfm_panel.BrowserOverlay.setlastfmIframe();"/>
+      <menuitem label="&lastfm_panelToolbarButton.context;" command="context_command" class="menuitem-iconic" image="chrome://lastfm_panel/content/reload.png"/>
+    </menupopup>
+	</popupset>
+  
+</overlay>

@@ -1,0 +1,22 @@
+#lastfm_label{
+  font-size: 180%;
+  font-weight: bold;
+}
+
+#lastfm_loading_label{
+  font-size: 150%;
+}
+
+#lastfm_loading_note_label{
+  padding-bottom: 1em;
+}
+
+#lastfm_loading_vbox{
+  margin: 10em;
+}
+
+#lastfm_contribution_label{
+  font-size: 120%;
+  font-weight: bold;
+  padding-top: 1em;
+}

@@ -1,0 +1,9 @@
+<!ENTITY gcontacts_panelToolbarButton.label    "GContacts Panel">
+<!ENTITY gcontacts_panelToolbarButton.tooltip  "GContacts Panel">
+<!ENTITY gcontacts_panelToolbarButton.context  "Reload the panel">
+<!ENTITY gcontacts_panelToolbar.reload         "Reload the panel">
+<!ENTITY gcontacts_panelToolbar.autohide       "Show/Hide the toolbar">
+<!ENTITY gcontacts_panelToolbar.pin            "Pin/Unpin the panel">
+<!ENTITY gcontacts_panelToolbar.close          "Close the panel">
+<!ENTITY gcontacts_panelToolbar.goBack         "Go back">
+<!ENTITY gcontacts_panelToolbar.goForward      "Go forward">

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>  
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<!-- Extremely recommended to keep this css include!! -->  
+<?xml-stylesheet href="chrome://lastfm_panel/content/lastfm-loading.css" type="text/css"?>
+
+<!DOCTYPE overlay SYSTEM "chrome://lastfm_panel/locale/loading.dtd">
+
+<window id="lastfmLoaging_window"  
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">  
+
+  <vbox id="lastfm_loading_vbox" align="center">
+    <label id="lastfm_label" value="&loading.lastfm_label;" />
+    <image id="lastfm_loading_img" src="chrome://lastfm_panel/content/lastfm-128.png" />
+    <label  id="lastfm_loading_label" value="&loading.loading_label;" />
+    <label id="lastfm_loading_note_label" value="&loading.loading_note_label;" />
+    <progressmeter id="lastfmLoadingProgress" mode="undetermined" />
+    <label id="lastfm_contribution_label" href="https://addons.mozilla.org/en-US/firefox/addon/lastfm-panel/about" class="text-link" value="&loading.contribution_label;"/>
+  </vbox>
+
+</window>  

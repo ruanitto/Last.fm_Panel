@@ -1,0 +1,134 @@
+#lastfm-toolbar-button {
+  list-style-image: url("chrome://lastfm_panel/content/contacts-16.png");
+}
+/* Added for Australis support */
+#lastfm-toolbar-button[cui-areatype="menu-panel"],
+toolbarpaletteitem[place="palette"] > #gdp-toolbar-button {
+  list-style-image: url("chrome://lastfm_panel/content/contacts-32.png");
+}
+
+#lastfm-panel-toolbar {
+	-moz-appearance: none;
+  border: none;
+	margin: 0;
+	padding: 0;
+}
+
+.lastfm-toolbar-class-show{
+  height: 24px;
+}
+
+.lastfm-toolbar-class-hide{
+  height: 2px;
+  transition: height 0.5s ease-out 0s;
+}
+
+.lastfm-toolbar-class-hide:hover {
+  height: 24px;
+  transition: height 0.5s ease-out 0s;
+}
+
+.lastfm-toolbar-class-hide > .lastfm-toolbarbutton-class {
+  visibility: collapse;
+}
+
+#lastfm-panel-toolbar:hover .lastfm-toolbarbutton-class {
+  visibility: visible;
+}
+  
+#lastfm-panel-toolbar > toolbarbutton{
+  -moz-appearance: none;
+	border: none;
+	margin: 0;
+	padding: 0px;
+	width: 24px;
+	height: 24px;
+	background: none;
+}
+
+#lastfm-toolbarButton_back {
+  list-style-image: url('chrome://lastfm_panel/content/controls.png');
+	-moz-image-region: rect(0px, 456px, 24px, 432px);
+}
+#lastfm-toolbarButton_back:hover {
+	-moz-image-region: rect(0px, 480px, 24px, 456px);
+}  
+#lastfm-toolbarButton_back:active {
+	-moz-image-region: rect(0px, 504px, 24px, 480px);
+}
+
+#lastfm-toolbarButton_forward {
+  list-style-image: url('chrome://lastfm_panel/content/controls.png');
+	-moz-image-region: rect(0px, 528px, 24px, 504px);
+}
+#lastfm-toolbarButton_forward:hover {
+	-moz-image-region: rect(0px, 552px, 24px, 528px);
+}  
+
+#lastfm-toolbarButton_forward:active {
+	-moz-image-region: rect(0px, 576px, 24px, 552px);
+}
+
+#lastfm-toolbarButton_reload {
+  list-style-image: url('chrome://lastfm_panel/content/controls.png');
+	-moz-image-region: rect(0px, 240px, 24px, 216px);
+}
+#lastfm-toolbarButton_reload:hover {
+	-moz-image-region: rect(0px, 264px, 24px, 240px);
+}  
+#lastfm-toolbarButton_reload:active {
+	-moz-image-region: rect(0px, 288px, 24px, 264px);
+} 
+
+#lastfm-toolbarButton_pin {
+  list-style-image: url('chrome://lastfm_panel/content/controls.png');
+	-moz-image-region: rect(0px, 24px, 24px, 0px);
+}
+#lastfm-toolbarButton_pin:hover {
+	-moz-image-region: rect(0px, 48px, 24px, 24px);
+}
+#lastfm-toolbarButton_pin:active {
+	-moz-image-region: rect(0px, 72px, 24px, 48px);
+} 
+
+#lastfm-toolbarButton_pin[checked] {
+	-moz-image-region: rect(0px, 96px, 24px, 72px);
+}
+#lastfm-toolbarButton_pin[checked]:hover {
+	-moz-image-region: rect(0px, 120px, 24px, 96px);
+}
+#lastfm-toolbarButton_pin[checked]:active {
+	-moz-image-region: rect(0px, 144px, 24px, 120px);
+}
+
+#lastfm-toolbarButton_close {
+  list-style-image: url('chrome://lastfm_panel/content/controls.png');
+	-moz-image-region: rect(0px, 168px, 24px, 144px);
+}
+#lastfm-toolbarButton_close:hover {
+	-moz-image-region: rect(0px, 192px, 24px, 168px);
+}
+#lastfm-toolbarButton_close:active {
+	-moz-image-region: rect(0px, 216px, 24px, 192px);
+}
+
+#lastfm-toolbarButton_autoHide {
+  list-style-image: url('chrome://lastfm_panel/content/controls.png');
+	-moz-image-region: rect(0px, 384px, 24px, 360px);
+}
+#lastfm-toolbarButton_autoHide:hover {
+	-moz-image-region: rect(0px, 408px, 24px, 384px);
+}
+#lastfm-toolbarButton_autoHide:active {
+	-moz-image-region: rect(0px, 432px, 24px, 408px);
+} 
+
+#lastfm-toolbarButton_autoHide[checked] {
+	-moz-image-region: rect(0px, 312px, 24px, 288px);
+}
+#lastfm-toolbarButton_autoHide[checked]:hover {
+	-moz-image-region: rect(0px, 336px, 24px, 312px);
+}
+#lastfm-toolbarButton_autoHide[checked]:active {
+	-moz-image-region: rect(0px, 360px, 24px, 336px);
+}

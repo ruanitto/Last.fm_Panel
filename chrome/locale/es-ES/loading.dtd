@@ -1,0 +1,4 @@
+<!ENTITY loading.gcontacts_label     "GContacts Panel">
+<!ENTITY loading.loading_label      "Estamos cargando tus contactos...debería tardar sólo unos segundos">
+<!ENTITY loading.contribution_label "Mientras tanto, por favor, considera en hacer una contribución!">
+<!ENTITY loading.loading_note_label "(Nota: Si el panel no se carga después de un tiempo, trata de volver a cargarlo con el botón de la barra de herramientas.)">

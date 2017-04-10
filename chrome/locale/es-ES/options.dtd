@@ -1,0 +1,19 @@
+<!ENTITY panelSize.widthTitle   "Ancho del panel:">
+<!ENTITY panelSize.widthDesc    "Porcentaje del ancho disponible de la ventana.">
+<!ENTITY panelSize.heightTitle  "Alto del panel:">
+<!ENTITY panelSize.heightDesc   "Porcentaje del alto disponible de la ventana.">
+<!ENTITY delayFirstRun.title    "Demora la primer carga del panel por:">
+<!ENTITY delayFirstRun.desc     "Demora en segundos. Esto hace que Firefox arranque más rápido.">
+
+<!ENTITY gcontacts_panelToolbar.noautohide.title "Fijar el panel">
+<!ENTITY gcontacts_panelToolbar.toolbarAutoHide.title "Autoesconder la barra de herramientas">
+
+<!ENTITY useTheGmailVersion.title "Utiliza el mismo tema de GMail">
+<!ENTITY useTheGmailVersion.desc "Vas a ver el mismo fondo que en GMail (Se necesita recargar el panel para ver los cambios)">
+
+<!ENTITY shortcut.modifiers.title "Modificadores">
+<!ENTITY shortcut.modifiers.desc  "En Mac Ctrl = Cmd">
+<!ENTITY shortcut.key.title       "Tecla">
+<!ENTITY shortcut.key.desc        "Escriba un solo caracter. Si introduce más de uno, sólo el primero es utilizado.">
+<!ENTITY shortcut.button.title    "Para que tenga efecto el cambio del atajo de teclado es necesario reinciar Firefox">
+<!ENTITY shortcut.button.label    "Reiniciar ahora!">

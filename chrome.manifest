@@ -2,5 +2,6 @@ content   lastfm_panel                 chrome/content/
 
 locale    lastfm_panel   en-US         chrome/locale/en-US/
 locale    lastfm_panel   es-ES         chrome/locale/es-ES/
+locale    lastfm_panel   pt-BR         chrome/locale/pt-BR/
 
 overlay	chrome://browser/content/browser.xul	chrome://lastfm_panel/content/gcp-overlay.xul
