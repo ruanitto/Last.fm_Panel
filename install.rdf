@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+    <Description about="urn:mozilla:install-manifest">
+        <em:type>2</em:type> <!-- 2 : Extension -->
+        <em:id>last.fm_panel@madsolutions.com.br</em:id>
+        <em:version>1.1.0.1</em:version>
+        <em:name>Last.fm Panel</em:name>
+        <em:creator>Rafael Gomes</em:creator>
+        
+        <em:targetApplication>
+            <Description>
+                <!-- Firefox -->
+                <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+                <em:minVersion>26.0</em:minVersion>
+                <em:maxVersion>*</em:maxVersion>
+            </Description>
+        </em:targetApplication>
+        
+        <em:optionsURL>chrome://lastfm_panel/content/gcp-options.xul</em:optionsURL>
+        <em:optionsType>2</em:optionsType>
+        
+        <em:iconURL>chrome://lastfm_panel/content/contacts-48.png</em:iconURL>
+        <em:icon64URL>chrome://lastfm_panel/content/contacts-64.png</em:icon64URL>
+        
+        <em:localized>
+          <Description>
+            <em:locale>es-ES</em:locale>
+            <em:name>Last.fm Panel</em:name>
+            <em:description>Integra tu Last.fm con Firefox de una manera sencilla.</em:description>
+          </Description>
+        </em:localized>
+        
+        <em:localized>
+          <Description>
+            <em:locale>en-US</em:locale>
+            <em:name>Last.fm Panel</em:name>
+            <em:description>Integrate your Last.fm with Firefox in a simple way.</em:description>
+          </Description>
+        </em:localized>
+		
+		<em:multiprocessCompatible>true</em:multiprocessCompatible>
+
+    </Description>
+</RDF>
